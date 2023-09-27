@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="form" class="container">
+      <div class="leftSide">
+        <img
+          src="/batman-logo.png"
+          alt="Batman logo"
+          onclick="displayLight()"
+        />
+      </div>
+      <div id="right" class="rightSide">
+        <h2>Sign up</h2>
+        <div class="nameField">
+          <label for="name-input">Name</label>
+          <input type="text" id="name-input" />
+        </div>
+        <div class="emailField">
+          <label for="email-input">Email</label>
+          <input type="email" id="email-input" />
+        </div>
+        <div class="passField">
+          <label for="pass-input">Password</label>
+          <input type="password" id="pass-input" />
+        </div>
+
+        <div class="forgotPass">
+          <a>Already a member?</a>
+          <button>Sign up</button>
+        </div>
+        <div class="social">
+          <a href="" class="facebook">
+            <box-icon
+              color="#51648c"
+              type="logo"
+              name="facebook"
+              class="icon"
+            ></box-icon>
+            Sign up with Facebook
+          </a>
+          <a href="" class="google">
+            <box-icon
+              type="logo"
+              name="google"
+              color="#4e80e5"
+              class="icon"
+            ></box-icon>
+            Sign up with Google</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+      const displayLight = () => {
+        const element = document.getElementById("form");
+        element.classList.toggle("darkKnight");
+      };
+    </script>
+  </body>
+</html>

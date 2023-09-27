@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #08181f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  background-color: #0f2630;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.container.darkKnight {
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+
+.leftSide {
+  background-image: url("/gotham-city.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.leftSide img {
+  width: 100px;
+  filter: brightness(0) invert(1);
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.leftSide:hover img {
+  transform: rotateY(540deg) scale(2.5);
+  filter: brightness(1) invert(0);
+}
+
+.leftSide button {
+  border: 1px solid #ffffff91;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 10px 35px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+.leftSide button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rightSide {
+  width: 100%;
+}
+
+.rightSide h2 {
+  font-size: 22px;
+  color: #ffffff5d;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+.rightSide label {
+  position: absolute;
+  color: #ffffff69;
+  font-size: 11px;
+  padding-left: 28px;
+  padding-top: 10px;
+}
+.rightSide input {
+  background-color: #112a35;
+  border: none;
+  border-top: 1px solid #193c4c;
+  border-bottom: 1px solid #193c4c;
+  width: 100%;
+  padding: 24px 30px 10px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.darkKnight .rightSide input {
+  background-color: #1f1f1f;
+  border-top: 1px solid #414141;
+  border-bottom: 1px solid #414141;
+  transition: all 0.3s ease;
+}
+
+.rightSide .forgotPass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.rightSide .forgotPass a {
+  color: #5adad5;
+  font-size: 14px;
+  cursor: pointer;
+}
+.darkKnight .rightSide .forgotPass a {
+  color: #414141;
+  transition: all 0.3s ease;
+}
+.rightSide .forgotPass button {
+  border: 1px solid #5adad63a;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 10px 30px;
+  color: #5adad5;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.darkKnight .forgotPass button {
+  color: #414141;
+  border-color: #414141;
+  transition: all 0.3s ease;
+}
+.rightSide .forgotPass button:hover {
+  background-color: #5adad5;
+  color: #0f2630;
+}
+.darkKnight .rightSide .forgotPass button:hover {
+  background-color: rgb(216, 216, 2);
+}
+
+.rightSide .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 240px;
+  margin: 20px auto;
+  font-size: 14px;
+  position: relative;
+}
+.rightSide .social .icon {
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 7px;
+}
+.rightSide .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rightSide .social a.facebook {
+  width: 100%;
+  border: 2px solid #51648c;
+  background-color: #51648c;
+  padding: 12px 20px;
+  border-radius: 100px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.rightSide .social a.facebook:hover {
+  background-color: transparent;
+}
+.rightSide .social a.google {
+  width: 100%;
+  border: 2px solid #4e80e5;
+  background-color: #4e80e5;
+  padding: 12px 20px;
+  border-radius: 100px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.rightSide .social a.google:hover {
+  background-color: transparent;
+}
